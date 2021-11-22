@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8d63f9512f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="beforeafter.html">BEFORE/AFTER</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+
+<!-- Contact Us -->
+<section class="location">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.3520918756067!2d-73.44070348444323!3d45.44256057910067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc90f48b6c01d8b%3A0x624f4c55a3ef5ea5!2sAll.%20DIX30%2C%20Brossard%2C%20QC!5e0!3m2!1sru!2sca!4v1637613790400!5m2!1sru!2sca"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact-us">
+
+<div class="row">
+<div class="contact-col">
+  <div>
+  <i class="fas fa-home"></i>
+  <span>
+    <h5>XJK DIX30 Road, 12 Building</h5>
+    <p>Brossard, Canada</p>
+  </span>
+  </div>
+  <div>
+    <i class="fas fa-phone"></i>
+  <span>
+    <h5>+ 1 012 345 67 89</h5>
+    <p>Monday to Saturday, from 8AM to 6PM</p>
+  </span>
+  </div>
+  <div>
+    <i class="fas fa-envelope"></i>
+  <span>
+    <h5>info@thermokleen.ca</h5>
+    <p>We are open for communication</p>
+  </span>
+  </div>
+</div>
+
+<div class="contact-col">
+<form action="">
+  <input type="text" placeholder="Enter your name" required>
+  <input type="email" placeholder="Enter email address" required>
+  <input type="text" placeholder="Enter your query" required>
+  <textarea rows="8" placeholder="Message"required ></textarea>
+  <button type="submit" class="hero-btn blue-btn">Send Message</button>
+</form>
+
+</div>
+
+</section>
+
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Our company is operating since 2020. Our aim is to provide excellent service and make our clients satisfied.</p>
+  <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+  </div>
+  <p>Made with <i class="fas fa-heart">for the best HTML course</i></p>
+</section>
+
+
+
+
+
+
+
+
+
+<!---Java Script For Toggle Menu---------->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+  navLinks.style.right = "0";
+}
+function hideMenu(){
+  navLinks.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>
